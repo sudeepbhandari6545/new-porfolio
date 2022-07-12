@@ -1,0 +1,19 @@
+.nav_item {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 5px;
+  text-transform: capitalize;
+  color: white !important;
+}
+.logo_image {
+  height: 50px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.navbar_main {
+  background-color: rgb(53, 52, 52);
+}
+.navbar_toggle {
+  background-color: white !important;
+}

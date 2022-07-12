@@ -1,0 +1,23 @@
+.skills_main_div {
+  background-color: rgb(158, 213, 248);
+  height: 80vh;
+  width: 100%;
+}
+.card_title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.skill_image {
+  height: 45px;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+li > h6 {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}

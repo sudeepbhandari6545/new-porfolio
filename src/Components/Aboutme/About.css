@@ -1,0 +1,43 @@
+.page_heading > h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(87, 86, 86);
+  padding-top: 30px;
+}
+.aboutme_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.about_image_div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.abouttme_heading {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.7rem;
+}
+.github_icon {
+  color: darkblue;
+  margin: 5px;
+}
+.linkdin_icon {
+  border-radius: 50%;
+  color: darkblue;
+  margin-left: 20px;
+}
+.facebook_icon {
+  border-radius: 50%;
+  color: darkblue;
+  margin-left: 20px;
+}
+.about_icons {
+  margin-bottom: 50px;
+}
