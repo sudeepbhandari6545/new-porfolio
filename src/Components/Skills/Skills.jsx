@@ -1,9 +1,47 @@
 import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
+import SkillBar from 'react-skillbars'
 //style
 import './Skills.css'
 
 const Skills = () => {
+  const SKILLS6 = [
+    {
+      type: 'CSS/HTML',
+      level: 95,
+      color: { bar: '#3498db', title: { text: '#fff', background: '#2980b9' } },
+    },
+    {
+      type: 'Javascript',
+      level: 85,
+      color: { bar: '#4288d0', title: { text: '#fff', background: '#124e8c' } },
+    },
+    {
+      type: 'React js',
+      level: 75,
+      color: { bar: '#2c3e50', title: { text: '#fff', background: '#2c3e50' } },
+    },
+    {
+      type: 'Next Js',
+      level: 40,
+      color: { bar: '#5a68a5', title: { text: '#fff', background: '#46465e' } },
+    },
+    {
+      type: 'Bootstrap',
+      level: 95,
+      color: { bar: '#525252', title: { text: '#fff', background: '#333333' } },
+    },
+    {
+      type: 'GitHub',
+      level: 75,
+      color: { bar: 'black', title: { text: '#111', background: '#fff' } },
+    },
+    {
+      type: 'Hosting',
+      level: 80,
+      color: { bar: '#2ecc71', title: { text: '#fff', background: '#27ae60' } },
+    },
+  ]
   return (
     <>
       <div className="skills_main_div">
@@ -21,7 +59,7 @@ const Skills = () => {
                   <hr></hr>
                   <Card.Text>
                     <Row>
-                      <Col lg={6}>
+                      <Col lg={5}>
                         <ul>
                           <li>
                             <img
@@ -114,95 +152,11 @@ const Skills = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
-              <Card style={{ width: '30rem' }}>
-                <Card.Body>
-                  <Card.Title className="card_title">
-                    Hosting Platforms
-                  </Card.Title>
-                  <hr></hr>
-                  <Card.Text>
-                    <Row>
-                      <Col lg={6}>
-                        <ul>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/netlify.c779369f.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>Netlify</h6>
-                          </li>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/github.c66b3c5a.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>GitHub Page</h6>
-                          </li>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/netlify.c779369f.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>Vercel</h6>
-                          </li>
-                        </ul>
-                      </Col>
-                      <Col lg={6}>
-                        <ul></ul>
-                      </Col>
-                    </Row>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: '30rem' }}>
-                <Card.Body>
-                  <Card.Title className="card_title">
-                    Hosting Platforms
-                  </Card.Title>
-                  <hr></hr>
-                  <Card.Text>
-                    <Row>
-                      <Col lg={6}>
-                        <ul>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/netlify.c779369f.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>Netlify</h6>
-                          </li>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/github.c66b3c5a.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>GitHub Page</h6>
-                          </li>
-                          <li>
-                            <img
-                              src="https://www.sudeepbhandari1.com.np/static/media/netlify.c779369f.svg"
-                              alt=""
-                              className="skill_image"
-                            />
-                            <h6>Vercel</h6>
-                          </li>
-                        </ul>
-                      </Col>
-                      <Col lg={6}>
-                        <ul></ul>
-                      </Col>
-                    </Row>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+
+            <Col lg={7}>
+              <div className="skill_bar">
+                <SkillBar skills={SKILLS6} height={42} />
+              </div>
             </Col>
           </Row>
         </Container>

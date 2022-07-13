@@ -21,3 +21,7 @@ li > h6 {
   margin-left: 10px;
   font-size: 1.3rem;
 }
+.skill_bar {
+  width: 70%;
+  margin-top: 10px;
+}
