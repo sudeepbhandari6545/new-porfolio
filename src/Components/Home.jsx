@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutMe from './Aboutme/AboutMe'
+import Experience from './Experience/Experience'
 import Navbar from './Headers/Navbar'
 import Skills from './Skills/Skills'
 import Heading from './Slider/Heading'
@@ -13,6 +14,7 @@ const Home = () => {
       <Heading />
       <AboutMe />
       <Skills />
+      <Experience />
     </>
   )
 }
